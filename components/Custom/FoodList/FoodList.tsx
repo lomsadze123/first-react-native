@@ -38,6 +38,8 @@ const FoodList = () => {
       </View>
 
       <FlatList
+        horizontal
+        showsHorizontalScrollIndicator={false}
         data={data}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
@@ -77,8 +79,6 @@ const styles = StyleSheet.create({
     fontWeight: "semibold",
   },
   list: {
-    flexDirection: "row",
-    alignItems: "center",
     gap: 12,
     marginTop: 28,
   },

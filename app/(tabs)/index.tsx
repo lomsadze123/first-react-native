@@ -11,11 +11,8 @@ const App = () => {
       contentContainerStyle={styles.contentContainer}
     >
       <Header />
-
       <FoodList />
-
       <PopularFood />
-
       <MenuButton />
     </ScrollView>
   );

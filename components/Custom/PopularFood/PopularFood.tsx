@@ -30,6 +30,8 @@ const PopularFood = () => {
       <Text style={styles.title}>Popular</Text>
 
       <FlatList
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.container}
         data={data}
         keyExtractor={(item) => item.id.toString()}
