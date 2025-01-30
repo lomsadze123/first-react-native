@@ -25,10 +25,11 @@ export default App;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 30,
-    padding: 16,
+    marginTop: 35,
   },
   contentContainer: {
     paddingBottom: 20,
+    padding: 16,
+    backgroundColor: "white",
   },
 });

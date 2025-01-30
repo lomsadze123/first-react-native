@@ -1,4 +1,5 @@
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import { Link } from "expo-router";
+import { StyleSheet, TouchableOpacity } from "react-native";
 
 const MenuButton = () => {
   return (
@@ -6,7 +7,9 @@ const MenuButton = () => {
       style={styles.linkButton}
       // onPress={() => navigation.navigate("Profile")}
     >
-      <Text style={styles.buttonText}>Menu</Text>
+      <Link href="/home" style={styles.buttonText}>
+        Menu
+      </Link>
     </TouchableOpacity>
   );
 };
